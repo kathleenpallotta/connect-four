@@ -60,6 +60,8 @@ export class Board extends React.Component {
                 if (nextFreeSpot >= 1) {
                     document.getElementById(nextFreeSpot).className = this.handlePlayer(player)
                 }
+            } else {
+                return;
             }
 
             if (this.verifyLines() !== undefined) {
