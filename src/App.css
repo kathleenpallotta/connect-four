@@ -77,8 +77,13 @@
 
 /*Mobile*/
 
+.body {
+  min-width: 500px;
+  min-height: 620px;
+}
+
 .board {
-  width: 495px;
+  width: 500px;
   height: 620px;
   background-image: linear-gradient(180deg,#0c1625 0,#182e4d 32%,#1a3354 62%,#1d385c 86%,#1f3e64 100%);
 }
