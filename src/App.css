@@ -9,7 +9,6 @@
 }
 
 @media only screen and (min-width: 768px) {
-
   body {
     width: 100%;
     height: 100%;
@@ -76,8 +75,10 @@
   }
 }
 
+/*Mobile*/
+
 .board {
-  width: 500px;
+  width: 495px;
   height: 620px;
   background-image: linear-gradient(180deg,#0c1625 0,#182e4d 32%,#1a3354 62%,#1d385c 86%,#1f3e64 100%);
 }
