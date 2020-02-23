@@ -3,11 +3,11 @@ import styled, {keyframes} from 'styled-components';
 import {bounce, bounceIn } from 'react-animations';
 import './App.css';
 
-const mobile = false;
+// const mobile = false;
 
-if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-    mobile = true;
-}
+// if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+//     mobile = true;
+// }
 
 let countingSpots = 1;
 
@@ -30,7 +30,7 @@ export class Board extends React.Component {
 
     verifyBoard = () => {
         //What happens when there's no room left to play and there is no winner?
-        // for (let i = 0; i < 42; i++) {
+        // for (let i = 1; i < 43; i++) {
         //     Array[i] = 'teste'
         // }
         let winner = this.state.gameWinner
@@ -55,7 +55,7 @@ export class Board extends React.Component {
                 gameBoard: Array[nextFreeSpot] = player
             })
             document.getElementById(nextFreeSpot).className = player
-            if (mobile === false) {    
+            if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {    
                 nextFreeSpot = this.getFreeSpot(spot)
                 if (nextFreeSpot >= 1) {
                     document.getElementById(nextFreeSpot).className = this.handlePlayer(player)
@@ -463,7 +463,7 @@ const restartGame = () => {
 }
 
 const Lines = props => {
-    if (props.verifyBoard === true) {
+    if (props.verifyBoard() === true) {
         return (
             <>
             <div className='game-over'><Bounce>GAME<br/>OVER</Bounce>
