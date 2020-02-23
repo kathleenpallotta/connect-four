@@ -78,8 +78,8 @@
 /*Mobile*/
 
 .body {
-  min-width: 500px;
-  min-height: 620px;
+  max-width: 500px;
+  max-height: 620px;
 }
 
 .board {
