@@ -8,6 +8,7 @@
   src: url(./fonts/impact.ttf)
 }
 
+/*Desktop*/
 @media only screen and (min-width: 768px) {
 
   body {
@@ -31,50 +32,10 @@
     transform: translate(-50%, -50%);
     /* background-image: linear-gradient(180deg,#0c1625 0,#182e4d 32%,#1a3354 62%,#1d385c 86%,#1f3e64 100%); */
   } 
-
-  .lines {
-    width: 500px;
-    height: 65px;
-    padding-bottom: 3px;
-  }
-  
-  .spots {
-    width: 65px;
-    height: 65px;
-    background-image: radial-gradient(#172a48 5%, #0a121f 95%);
-    display: inline-block;
-    margin: 3px;
-    border-radius: 50%;
-    cursor: pointer;
-  }
-  
-  .player1 {
-    width: 65px;
-    height: 65px;
-    background-image: radial-gradient(#d2e906 5%,#94a30b 100%);
-    box-shadow: 0 0 4px #e6ff01;
-    display: inline-block;
-    margin: 3px;
-    border-radius: 50%;
-    cursor: pointer;
-  }
-  
-  .player1-text-decoration {
-    color: #e6ff01;
-    font-weight: bold;
-  }
-  
-  .player2 {
-    width: 65px;
-    height: 65px;
-    background-color: #08e8f8;
-    box-shadow: 0 0 6px #08e8f8;
-    display: inline-block;
-    margin: 3px;
-    border-radius: 50%;
-    cursor: pointer;
-  }
 }
+
+
+/*Mobile*/
 
 .board {
   width: 500px;
@@ -111,15 +72,14 @@ p {
 }
 
 .lines {
-  margin-left: 3%;
-  width: 495px;
-  height: 60px;
+  width: 500px;
+  height: 65px;
   padding-bottom: 3px;
 }
 
 .spots {
-  width: 60px;
-  height: 60px;
+  width: 65px;
+  height: 65px;
   background-image: radial-gradient(#172a48 5%, #0a121f 95%);
   display: inline-block;
   margin: 3px;
@@ -128,10 +88,10 @@ p {
 }
 
 .player1 {
-  width: 60px;
-  height: 60px;
+  width: 65px;
+  height: 65px;
   background-image: radial-gradient(#d2e906 5%,#94a30b 100%);
-  box-shadow: 0 0 1px #e6ff01;
+  box-shadow: 0 0 4px #e6ff01;
   display: inline-block;
   margin: 3px;
   border-radius: 50%;
@@ -144,10 +104,10 @@ p {
 }
 
 .player2 {
-  width: 60px;
-  height: 60px;
+  width: 65px;
+  height: 65px;
   background-color: #08e8f8;
-  box-shadow: 0 0 2px #08e8f8;
+  box-shadow: 0 0 6px #08e8f8;
   display: inline-block;
   margin: 3px;
   border-radius: 50%;
