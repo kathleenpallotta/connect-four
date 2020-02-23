@@ -20,7 +20,7 @@
     min-height: 620px;
   }
 
-@media screen and (max-width: 500px) {
+/* @media screen and (max-width: 500px) {
   .board {
     width: 490px;
     height: 610px;
@@ -35,7 +35,7 @@
     height: 60px;
   }
 
-}
+} */
 
 .board {
   width: 500px;
